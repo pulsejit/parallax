@@ -3,6 +3,10 @@
   padding: 0;
   margin: 0;
 }
+body{
+    scroll-snap-type: y mandatory;
+    overflow-y:scroll;
+}
 div{
   display: flex;
   align-items:center;
@@ -21,17 +25,21 @@ h2{
 div:nth-child(1){
   background-image:url('../img/div1.jpg');
   background-size:cover;
+  scroll-snap-align:start;
 }
 div:nth-child(2){
   background: maroon;
+  scroll-snap-align:start;
   
 }
 div:nth-child(3){
-  height:400px;
+  
   background-image:url('../img/div3.jpg');
   background-attachment:fixed;
   background-size:cover;
+  scroll-snap-align:start;
 }
 div:nth-child(4){
   background: aquamarine;
+  scroll-snap-align:start;
 } 
